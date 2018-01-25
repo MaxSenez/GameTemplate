@@ -57,7 +57,7 @@ namespace GameTemplate.Screens
         public GameScreen()
         {
             InitializeComponent();
-                       
+                                   
             //Light cycle p1
             lightCycle = new System.Windows.Media.MediaPlayer();
             lightCycle.Open(new Uri(Application.StartupPath + "/Resources/LightCycle.wav"));
@@ -251,6 +251,9 @@ namespace GameTemplate.Screens
             Form1.p2_1.Visible = false;
             Form1.p2_2.Visible = false;
             Form1.p2_3.Visible = false;
+
+            Form1.p1life = 3;
+            Form1.p2life = 3;
             ScreenControl.changeScreen(this, "MenuScreen");
         }
 
